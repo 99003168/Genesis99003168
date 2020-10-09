@@ -1,0 +1,71 @@
+# depslib dependency file v1.0
+1602156403 source:c:\airlines\airlines\implementation\airlines.c
+	"airlines.h"
+
+1602234373 source:c:\airlines\airlines\implementation\src\airlines.c
+	<stdio.h>
+	<math.h>
+	<string.h>
+	<stdlib.h>
+
+1602238750 source:c:\airlines\airlines\main.c
+	<stdio.h>
+	<math.h>
+	<string.h>
+	<stdlib.h>
+
+1602145878 c:\airlines\airlines\airlines.h
+
+1602145914 c:\airlines\airlines\implementation\airlines.h
+
+1602169489 source:c:\airlines\airlines\unity\unity.c
+	"unity.h"
+	<stddef.h>
+	<avr/pgmspace.h>
+
+1602160198 c:\airlines\airlines\unity\unity.h
+	"unity_internals.h"
+
+1602160198 c:\airlines\airlines\unity\unity_internals.h
+	"unity_config.h"
+	<setjmp.h>
+	<math.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdint.h>
+	<limits.h>
+	<stdio.h>
+	<stdio.h>
+	<time.h>
+	<time.h>
+
+1602166815 source:c:\airlines\airlines\implementation\test\airlines.c
+
+1602224253 source:c:\airlines\airlines\implementation\main.c
+	"airlines.h"
+
+1602234311 source:c:\airlines\airlines\implementation\test\test_airlines.c
+
+1602168110 c:\airlines\airlines\implementation\test\airlines.h
+
+1602234401 source:c:\airlines\airlines\implementation\unity\unity.c
+	"unity.h"
+	<stddef.h>
+	<avr/pgmspace.h>
+
+1602224764 c:\airlines\airlines\implementation\unity\unity.h
+	"unity_internals.h"
+
+1602224764 c:\airlines\airlines\implementation\unity\unity_internals.h
+	"unity_config.h"
+	<setjmp.h>
+	<math.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdint.h>
+	<limits.h>
+	<stdio.h>
+	<stdio.h>
+	<time.h>
+	<time.h>
+
