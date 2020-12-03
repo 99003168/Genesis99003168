@@ -1,21 +1,46 @@
-SRC = unity/unity.c\
-src/airlines.c\
-test/test_airlines.c\
-main.c
+PROJECT_NAME = Airlines_Seat_Reservation_System
 
-INC = -Iunity\
+
+
+# Output directory
+BUILD = build
+
+# All source code files
+SRC = main.c\
+src/airlines.c\
+
+TEST_SRC = src/airlines.c\
+test/test_airlines.c
+
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+
+# All include folders with header files
+INC	= -Iunity\
 -Iinc\
 -Itest
 
-PROJECT_NAME = AIRLINES.out
+PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
-$(PROJECT_NAME): $(SRC)
-	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
 
+
+# Default target built
+$(PROJECT_NAME):all
+
+# Run the target even if the matching name exists
+.PHONY: run clean test  doc all
+
+all: $(SRC) $(BUILD)
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out -lm
+
+# Call `make run` to run the application
 run:$(PROJECT_NAME)
-	./${PROJECT_NAME}
-doc:
-	make -C documentation
+	./$(PROJECT_OUTPUT).out
 
+
+# Remove all the built files, invoke by `make clean`
 clean:
-	rm -rf $(PROJECT_NAME) documentation/html
+	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
+
+# Create new build folder if not present
+$(BUILD):
+	mkdir build
